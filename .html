@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Scene Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Virtual Scene Generator</h1>
+        <form id="scene-form">
+            <label for="weather">Weather:</label>
+            <select id="weather">
+                <option value="sunny">Sunny</option>
+                <option value="rainy">Rainy</option>
+                <option value="foggy">Foggy</option>
+            </select>
+
+            <label for="season">Season:</label>
+            <select id="season">
+                <option value="summer">Summer</option>
+                <option value="winter">Winter</option>
+            </select>
+
+            <label for="geography">Geographic Scene:</label>
+            <select id="geography">
+                <option value="hilly">Hilly Terrain</option>
+                <option value="open_field">Open Field</option>
+                <option value="market">Crowded Market</option>
+            </select>
+
+            <button type="submit">Generate Scene</button>
+        </form>
+        <div id="scene-container"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
